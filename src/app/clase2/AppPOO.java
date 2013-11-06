@@ -10,6 +10,6 @@ package app.clase2;
  */
 public class AppPOO {
     public static void main(String[] args) {
-        System.out.println("HOLAAAAAA");
+        System.out.println("HOLAAAAAAs");
     }
 }
