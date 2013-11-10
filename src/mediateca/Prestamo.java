@@ -18,4 +18,7 @@ public class Prestamo {
         private Video vvideo;
         private Audio vaudio;
 
+          public Prestamo(){
+                
+        }
 }

@@ -21,7 +21,7 @@ public class Tigre extends Animal {
         System.out.println("Grrrrrrrrrrrr");
     }
     
-     public void hacerRuido(boolen molestar) {
+     public void hacerRuido(boolean molestar) {
          //To change body of generated methods, choose Tools | Templates.
         System.out.println("Grrr");
     }
