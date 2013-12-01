@@ -1,11 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
+package clase6;
 
-package clase5.ejerciciop1;
-
+import clase5.sokets.ejemplo1.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
@@ -13,7 +12,7 @@ import java.net.Socket;
 
 /**
  *
- * @author mrios
+ * @author alumno
  */
 public class Cliente {
 
@@ -35,24 +34,16 @@ public class Cliente {
             String msg = in.readLine();
             System.out.println(msg);
 // COMUNICACION 2
-            out.println("r");
-            out.println(3);
-            out.println(2);
+            out.println("CLIENTE: Monica Rios");
             
             out.println("m");
-            out.println(20);
-            out.println(5);
+            out.println("9");
+            out.println("10");
             
+            String msg1 = in.readLine();
+            System.out.println(msg1);
             
-            msg = in.readLine();
-            System.out.println(msg);
-            
-            msg = in.readLine();
-            System.out.println(msg);
-            
-            msg = in.readLine();
-            System.out.println(msg);
-      // Cerrar canales
+// Cerrar canales
             in.close();
             out.close();
             cliente.close();

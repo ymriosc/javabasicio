@@ -13,24 +13,10 @@ package clase5.ejerciciop1;
 public class EjecutarCliente {
         public static void main(String[] args) {
         // la ip del servidor con el puerto que habilito dicho servidor
-        Cliente clientee = new Cliente("192.168.14.23", 9999);
+        Cliente clientee = new Cliente("localhost", 9999);
         OperacionesMatematicas operaciones=new OperacionesMatematicas();
         operaciones.resta(50, 60);
         clientee.doConectar();
-        
-        
-        Cliente clientee2 = new Cliente("192.168.14.47", 9999);
-        OperacionesMatematicas operaciones2=new OperacionesMatematicas();
-        operaciones2.suma(50, 60);
-        clientee2.doConectar();
-               
-        
-        Cliente clientee3 = new Cliente("192.168.14.100", 9999);
-        OperacionesMatematicas operaciones3=new OperacionesMatematicas();
-        clientee3.doConectar();
-        operaciones3.multiplicacion(50, 60);
-        
-        
         
     }
         

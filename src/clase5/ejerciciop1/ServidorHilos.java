@@ -33,17 +33,33 @@ public class ServidorHilos extends Thread  {
 // COMUNICACION 1
             out.println("SERVIDOR: Bienvenido, Ingrese Operacion  Matematica a realizar ");
 // COMUNICACION 2
-            String resp2 = in.readLine();
-            System.out.println(resp2);
-            OperacionesMatematicas operacion= new OperacionesMatematicas();
-            double suma=operacion.suma(50,60);
-            System.out.println(suma);
-            
-            double resta=operacion.resta(50,60);
-            System.out.println(resta);
-                       
-            double multiplicacion=operacion.multiplicacion(50,60);
-            System.out.println(multiplicacion);
+            String operacion = in.readLine();
+            double op1 = Double.parseDouble(in.readLine());
+            double op2 = Double.parseDouble(in.readLine());
+           
+             if (operacion.equals("m")){
+                out.println("Servidor Multiplicacion");
+                out.println(op1 * op2);
+                
+            }
+             if(operacion.equals("s")){
+                out.println("Servidor Suma");
+                out.println(op1 + op2);
+            }
+             if(operacion.equals("d")){
+                try{
+                out.println("Servidor Division");
+                out.println(op1 / op2);
+                 }catch (ArithmeticException nomerror ){
+                      System.out.println("Error Matematico");
+                 }finally{
+                     System.out.println("Fin del Programa");
+                 }            
+            }
+            if(operacion.equals("r")){
+                out.println("Servidor Resta");
+                out.println(op1 - op2);
+            }
             
             /* Cerramos el canal */
             in.close();
